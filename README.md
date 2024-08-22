@@ -1,2 +1,2 @@
 # newton-practice
-A test repository of Newton's machine.
+My test repository of Newton's machine.
