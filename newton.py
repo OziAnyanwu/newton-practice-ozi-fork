@@ -4,7 +4,7 @@ def deriv(f, x, eps=1e-16):
     return (f(x + eps) - f(x)) / eps
 
 
-def deriv2(f, x, eps=1e-16):
+def deriv2(f, x, eps=1e-4):
     return (deriv(f, x + eps, eps) - deriv(f, x, eps)) / eps
 
 
