@@ -9,6 +9,7 @@ def deriv2(f, x, eps=1e-6):
 
 
 def optimize(x0, f):
+    # let user choose for the sake of this excercise`
     tol = float(input('Stopping tolerance: '))
     x_new = x0 - deriv(f, x0) / deriv2(f, x0)
     x = x0
