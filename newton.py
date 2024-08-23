@@ -8,7 +8,8 @@ def deriv2(f, x, eps=1e-6):
     return (deriv(f, x + eps, eps) - deriv(f, x, eps)) / eps
 
 
-def optimize(x0, f, tol=1e-4):
+def optimize(x0, f):
+    tol = float(input('Stopping tolerance: '))
     x_new = x0 - deriv(f, x0) / deriv2(f, x0)
     x = x0
     while abs(x_new - x) > tol:
